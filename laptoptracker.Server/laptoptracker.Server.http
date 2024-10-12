@@ -1,0 +1,6 @@
+@laptoptracker.Server_HostAddress = http://localhost:5237
+
+GET {{laptoptracker.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

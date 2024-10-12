@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laptoptracker.Server", "laptoptracker.Server\laptoptracker.Server.csproj", "{2C8CABE6-1C38-45AB-A849-5F8C95D8EF29}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "laptoptracker.client", "laptoptracker.client\laptoptracker.client.esproj", "{72AFBE86-FA1A-493E-BCD6-243CF3369FDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C8CABE6-1C38-45AB-A849-5F8C95D8EF29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C8CABE6-1C38-45AB-A849-5F8C95D8EF29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C8CABE6-1C38-45AB-A849-5F8C95D8EF29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C8CABE6-1C38-45AB-A849-5F8C95D8EF29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72AFBE86-FA1A-493E-BCD6-243CF3369FDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72AFBE86-FA1A-493E-BCD6-243CF3369FDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72AFBE86-FA1A-493E-BCD6-243CF3369FDA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{72AFBE86-FA1A-493E-BCD6-243CF3369FDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72AFBE86-FA1A-493E-BCD6-243CF3369FDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72AFBE86-FA1A-493E-BCD6-243CF3369FDA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C0C63F2-3B0A-47EC-9308-352861D87082}
+	EndGlobalSection
+EndGlobal
