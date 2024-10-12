@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("laptoptracker.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5556cde7c34f5bb95b6ff6caf18a4dfc405dee33")]
 [assembly: System.Reflection.AssemblyProductAttribute("laptoptracker.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("laptoptracker.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\laptoptracker\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72AFBE86-FA1A-493E-BCD6-243CF3369FDA}|laptoptracker.client\\laptoptracker.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\laptoptracker\\laptoptracker.client\\src\\components\\laptoptracker\\laptoptrackingdashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{72AFBE86-FA1A-493E-BCD6-243CF3369FDA}|laptoptracker.client\\laptoptracker.client.esproj|solutionrelative:laptoptracker.client\\src\\components\\laptoptracker\\laptoptrackingdashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LaptopTrackingDashboard.jsx",
+              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\laptoptracker\\laptoptracker.client\\src\\components\\LaptopTracker\\LaptopTrackingDashboard.jsx",
+              "RelativeDocumentMoniker": "laptoptracker.client\\src\\components\\LaptopTracker\\LaptopTrackingDashboard.jsx",
+              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\laptoptracker\\laptoptracker.client\\src\\components\\LaptopTracker\\LaptopTrackingDashboard.jsx",
+              "RelativeToolTip": "laptoptracker.client\\src\\components\\LaptopTracker\\LaptopTrackingDashboard.jsx",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAowEgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-10-12T16:16:11.775Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"

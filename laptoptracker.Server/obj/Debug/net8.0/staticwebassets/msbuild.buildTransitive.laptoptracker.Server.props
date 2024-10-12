@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\laptoptracker.Server.props" />
+</Project>

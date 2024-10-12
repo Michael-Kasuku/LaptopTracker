@@ -1,30 +1,70 @@
+using Microsoft.EntityFrameworkCore;
+using laptoptracker.Server.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+// Add CORS support
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
+// Optional: Add Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.UseDefaultFiles();
-app.UseStaticFiles();
+// Apply migrations at startup
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<AppDbContext>();
 
-// Configure the HTTP request pipeline.
+    // Apply pending migrations (if any)
+    context.Database.Migrate();
+}
+
+// Optional: Enable Swagger in Development mode
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
+// Serve default files like index.html in the wwwroot directory
+app.UseDefaultFiles();
+
+// Serve static files (e.g., CSS, JS, images) from wwwroot
+app.UseStaticFiles();
+
+// Force HTTPS redirection
 app.UseHttpsRedirection();
 
+// Enable routing
+app.UseRouting();
+
+// Use CORS
+app.UseCors("AllowAll");
+
+// Enable authorization
 app.UseAuthorization();
 
+// Map API controllers
 app.MapControllers();
 
-app.MapFallbackToFile("/index.html");
+// Fallback for SPA routes – routes that don't match the API will serve index.html
+app.MapFallbackToFile("index.html");
 
 app.Run();
