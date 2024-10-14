@@ -4,24 +4,23 @@ import {
     ListItem,
     ListItemText,
     Collapse,
-    Avatar,
-    Divider,
     ListItemIcon,
-    Typography
+    Divider,
+    Typography,
+    Box,
+    Tooltip
 } from '@mui/material';
 import {
     ExpandLess,
     ExpandMore,
     Home,
-    Folder,
     Laptop,
     Report,
     Assignment,
-    Settings,
-    Info
+    AddCircle, // for adding devices
+    Visibility // for viewing devices
 } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
-import $ from 'jquery'; // Import jQuery
 
 class VerticalNavBar extends Component {
     constructor(props) {
@@ -29,126 +28,108 @@ class VerticalNavBar extends Component {
         this.state = {
             openDeviceManagement: false,
             openReports: false,
-            openSettings: false,
         };
     }
 
     toggleCollapse = (section) => {
         this.setState((prevState) => ({
             [section]: !prevState[section],
-        }), () => {
-            // jQuery for collapse effect
-            const sectionElement = $(`.${section}`);
-            if (this.state[section]) {
-                sectionElement.slideDown(); // Show the section
-            } else {
-                sectionElement.slideUp(); // Hide the section
-            }
-        });
+        }));
     };
 
+    renderListItem = (to, icon, primaryText, padding) => (
+        <ListItem
+            button
+            component={Link}
+            to={to}
+            sx={{
+                padding: padding || '15px 20px',
+                '&:hover': { backgroundColor: '#f0f0f0' },
+            }}
+        >
+            <ListItemIcon sx={{ color: '#1976d2' }}>
+                <Tooltip title={primaryText}>
+                    {icon}
+                </Tooltip>
+            </ListItemIcon>
+            <ListItemText primary={primaryText} />
+        </ListItem>
+    );
+
+    renderCollapsibleList = (isOpen, sectionName, items) => (
+        <>
+            <ListItem
+                button
+                onClick={() => this.toggleCollapse(sectionName)}
+                sx={{
+                    padding: '15px 20px',
+                    '&:hover': { backgroundColor: '#f0f0f0' },
+                }}
+            >
+                <ListItemIcon sx={{ color: '#1976d2' }}>
+                    {items.icon}
+                </ListItemIcon>
+                <ListItemText primary={items.title} />
+                {isOpen ? <ExpandLess /> : <ExpandMore />}
+            </ListItem>
+            <Collapse in={isOpen} timeout="auto" unmountOnExit>
+                <List component="div" disablePadding>
+                    {items.subItems.map((subItem, index) => this.renderListItem(subItem.to, subItem.icon, subItem.text, '10px 40px', index))}
+                </List>
+            </Collapse>
+        </>
+    );
+
     render() {
-        const { openDeviceManagement, openReports, openSettings } = this.state;
+        const { openDeviceManagement, openReports } = this.state;
 
         return (
-            <nav className="sidebar" style={{ width: '280px', backgroundColor: '#f7f7f7' }}>
-                <List component="nav" disablePadding>
-                    {/* Profile Section */}
-                    <ListItem className="nav-profile" style={{ padding: '20px 15px' }}>
-                        <Avatar alt="Michael Kasuku" src="assets/img/team/kasuku.jpg" sx={{ width: 56, height: 56 }} />
-                        <div style={{ marginLeft: '15px' }}>
-                            <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
-                                Michael Kasuku
-                            </Typography>
-                            <Typography variant="body2" color="textSecondary">
-                                Project Manager
-                            </Typography>
-                        </div>
-                    </ListItem>
-                    <Divider />
+            <nav
+                className="sidebar"
+                style={{
+                    width: '280px',
+                    backgroundColor: '#ffffff',
+                    boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
+                    borderRadius: '8px',
+                    height: '100vh',
+                    overflow: 'auto',
+                }}
+            >
+                <Typography
+                    variant="h5"
+                    sx={{
+                        padding: '20px',
+                        textAlign: 'center',
+                        fontWeight: 'bold',
+                        color: '#1976d2',
+                    }}
+                >
+                    Laptop Tracker
+                </Typography>
+                <Divider />
 
+                <List component="nav" disablePadding>
                     {/* Dashboard */}
-                    <ListItem button component={Link} to="/dashboard">
-                        <ListItemIcon>
-                            <Home />
-                        </ListItemIcon>
-                        <ListItemText primary="Dashboard" />
-                    </ListItem>
+                    {this.renderListItem("/dashboard", <Home />, "Dashboard")}
 
                     {/* Device Management */}
-                    <ListItem button onClick={() => this.toggleCollapse('openDeviceManagement')}>
-                        <ListItemIcon>
-                            <Laptop />
-                        </ListItemIcon>
-                        <ListItemText primary="Device Management" />
-                        {openDeviceManagement ? <ExpandLess /> : <ExpandMore />}
-                    </ListItem>
-                    <Collapse className="openDeviceManagement" in={openDeviceManagement} timeout="auto" unmountOnExit>
-                        <List component="div" disablePadding>
-                            <ListItem button component={Link} to="/add-device">
-                                <ListItemIcon>
-                                    <Assignment />
-                                </ListItemIcon>
-                                <ListItemText primary="Add Device" />
-                            </ListItem>
-                            <ListItem button component={Link} to="/view-devices">
-                                <ListItemIcon>
-                                    <Report />
-                                </ListItemIcon>
-                                <ListItemText primary="View Devices" />
-                            </ListItem>
-                        </List>
-                    </Collapse>
+                    {this.renderCollapsibleList(openDeviceManagement, 'openDeviceManagement', {
+                        icon: <Laptop />,
+                        title: "Device Management",
+                        subItems: [
+                            { to: "/dashboard/add-device", icon: <AddCircle />, text: "Add Device" }, // Updated to include '/dashboard'
+                            { to: "/dashboard/view-devices", icon: <Visibility />, text: "View Devices" }, // Make sure this is also updated
+                        ]
+                    })}
 
                     {/* Reports */}
-                    <ListItem button onClick={() => this.toggleCollapse('openReports')}>
-                        <ListItemIcon>
-                            <Report />
-                        </ListItemIcon>
-                        <ListItemText primary="Reports" />
-                        {openReports ? <ExpandLess /> : <ExpandMore />}
-                    </ListItem>
-                    <Collapse className="openReports" in={openReports} timeout="auto" unmountOnExit>
-                        <List component="div" disablePadding>
-                            <ListItem button component={Link} to="/usage-report">
-                                <ListItemIcon>
-                                    <Assignment />
-                                </ListItemIcon>
-                                <ListItemText primary="Usage Report" />
-                            </ListItem>
-                            <ListItem button component={Link} to="/issues-report">
-                                <ListItemIcon>
-                                    <Report />
-                                </ListItemIcon>
-                                <ListItemText primary="Issues Report" />
-                            </ListItem>
-                        </List>
-                    </Collapse>
-
-                    {/* Settings */}
-                    <ListItem button onClick={() => this.toggleCollapse('openSettings')}>
-                        <ListItemIcon>
-                            <Settings />
-                        </ListItemIcon>
-                        <ListItemText primary="Settings" />
-                        {openSettings ? <ExpandLess /> : <ExpandMore />}
-                    </ListItem>
-                    <Collapse className="openSettings" in={openSettings} timeout="auto" unmountOnExit>
-                        <List component="div" disablePadding>
-                            <ListItem button component={Link} to="/profile-settings">
-                                <ListItemIcon>
-                                    <Info />
-                                </ListItemIcon>
-                                <ListItemText primary="Profile Settings" />
-                            </ListItem>
-                            <ListItem button component={Link} to="/app-settings">
-                                <ListItemIcon>
-                                    <Settings />
-                                </ListItemIcon>
-                                <ListItemText primary="App Settings" />
-                            </ListItem>
-                        </List>
-                    </Collapse>
+                    {this.renderCollapsibleList(openReports, 'openReports', {
+                        icon: <Report />,
+                        title: "Reports",
+                        subItems: [
+                            { to: "/dashboard/usage-report", icon: <Assignment />, text: "Usage Report" },                            
+                        ]
+                    })}
                 </List>
             </nav>
         );

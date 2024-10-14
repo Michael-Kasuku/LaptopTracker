@@ -16,18 +16,23 @@
     <PackageJsonDependenciesFortawesomeReactFontawesome Condition="$(PackageJsonDependenciesFortawesomeReactFontawesome) == ''">^0.2.2</PackageJsonDependenciesFortawesomeReactFontawesome>
     <PackageJsonDependenciesMuiIconsMaterial Condition="$(PackageJsonDependenciesMuiIconsMaterial) == ''">^6.1.3</PackageJsonDependenciesMuiIconsMaterial>
     <PackageJsonDependenciesMuiMaterial Condition="$(PackageJsonDependenciesMuiMaterial) == ''">^6.1.3</PackageJsonDependenciesMuiMaterial>
+    <PackageJsonDependenciesMuiStyles Condition="$(PackageJsonDependenciesMuiStyles) == ''">^6.1.3</PackageJsonDependenciesMuiStyles>
     <PackageJsonDependenciesPopperjsCore Condition="$(PackageJsonDependenciesPopperjsCore) == ''">^2.11.8</PackageJsonDependenciesPopperjsCore>
     <PackageJsonDependenciesAxios Condition="$(PackageJsonDependenciesAxios) == ''">^1.7.7</PackageJsonDependenciesAxios>
     <PackageJsonDependenciesBootstrap Condition="$(PackageJsonDependenciesBootstrap) == ''">^5.3.3</PackageJsonDependenciesBootstrap>
+    <PackageJsonDependenciesBootstrapIcons Condition="$(PackageJsonDependenciesBootstrapIcons) == ''">^1.11.3</PackageJsonDependenciesBootstrapIcons>
     <PackageJsonDependenciesDateFns Condition="$(PackageJsonDependenciesDateFns) == ''">^4.1.0</PackageJsonDependenciesDateFns>
     <PackageJsonDependenciesJquery Condition="$(PackageJsonDependenciesJquery) == ''">^3.7.1</PackageJsonDependenciesJquery>
     <PackageJsonDependenciesLeaflet Condition="$(PackageJsonDependenciesLeaflet) == ''">^1.9.4</PackageJsonDependenciesLeaflet>
+    <PackageJsonDependenciesLodash Condition="$(PackageJsonDependenciesLodash) == ''">^4.17.21</PackageJsonDependenciesLodash>
     <PackageJsonDependenciesReact Condition="$(PackageJsonDependenciesReact) == ''">^18.3.1</PackageJsonDependenciesReact>
+    <PackageJsonDependenciesReactBootstrap Condition="$(PackageJsonDependenciesReactBootstrap) == ''">^2.10.5</PackageJsonDependenciesReactBootstrap>
     <PackageJsonDependenciesReactDatepicker Condition="$(PackageJsonDependenciesReactDatepicker) == ''">^7.4.0</PackageJsonDependenciesReactDatepicker>
     <PackageJsonDependenciesReactDom Condition="$(PackageJsonDependenciesReactDom) == ''">^18.3.1</PackageJsonDependenciesReactDom>
     <PackageJsonDependenciesReactLeaflet Condition="$(PackageJsonDependenciesReactLeaflet) == ''">^4.2.1</PackageJsonDependenciesReactLeaflet>
     <PackageJsonDependenciesReactRouterDom Condition="$(PackageJsonDependenciesReactRouterDom) == ''">^6.27.0</PackageJsonDependenciesReactRouterDom>
     <PackageJsonDependenciesReactScroll Condition="$(PackageJsonDependenciesReactScroll) == ''">^1.9.0</PackageJsonDependenciesReactScroll>
+    <PackageJsonDependenciesRecharts Condition="$(PackageJsonDependenciesRecharts) == ''">^2.13.0</PackageJsonDependenciesRecharts>
     <PackageJsonDependenciesStyledComponents Condition="$(PackageJsonDependenciesStyledComponents) == ''">^6.1.13</PackageJsonDependenciesStyledComponents>
     <PackageJsonDevdependenciesEslintJs Condition="$(PackageJsonDevdependenciesEslintJs) == ''">^9.11.1</PackageJsonDevdependenciesEslintJs>
     <PackageJsonDevdependenciesTypesReact Condition="$(PackageJsonDevdependenciesTypesReact) == ''">^18.3.10</PackageJsonDevdependenciesTypesReact>

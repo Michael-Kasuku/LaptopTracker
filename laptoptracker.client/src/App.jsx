@@ -1,8 +1,9 @@
+// Import necessary modules
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import 'bootstrap'; // Import Bootstrap JS
 import 'jquery'; // Import jQuery
 import '@popperjs/core'; // Import Popper.js
-import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome CSS
+import 'bootstrap-icons/font/bootstrap-icons.css'; // If you are using Bootstrap icons instead of Font Awesome
 import React from 'react';
 import ReactDOM from 'react-dom/client'; // Update import to use 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Import Routes and Route components
@@ -26,7 +27,7 @@ root.render(
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/signup" element={<SignUpPage />} />
                 <Route path="/forgot" element={<ForgotPasswordPage />} />
-                <Route path="/tracker" element={<LaptopTrackerDashboard />} />
+                <Route path="/dashboard/*" element={<LaptopTrackerDashboard />} /> {/* Use wildcard for nested routes */}
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

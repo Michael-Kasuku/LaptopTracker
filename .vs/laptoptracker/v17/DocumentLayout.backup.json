@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\laptoptracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{72AFBE86-FA1A-493E-BCD6-243CF3369FDA}|laptoptracker.client\\laptoptracker.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\laptoptracker\\laptoptracker.client\\src\\components\\loginpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{72AFBE86-FA1A-493E-BCD6-243CF3369FDA}|laptoptracker.client\\laptoptracker.client.esproj|solutionrelative:laptoptracker.client\\src\\components\\loginpage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72AFBE86-FA1A-493E-BCD6-243CF3369FDA}|laptoptracker.client\\laptoptracker.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\laptoptracker\\laptoptracker.client\\src\\components\\laptoptrackerdashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{72AFBE86-FA1A-493E-BCD6-243CF3369FDA}|laptoptracker.client\\laptoptracker.client.esproj|solutionrelative:laptoptracker.client\\src\\components\\laptoptrackerdashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{72AFBE86-FA1A-493E-BCD6-243CF3369FDA}|laptoptracker.client\\laptoptracker.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\laptoptracker\\laptoptracker.client\\src\\components\\landingpage\\footer.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{72AFBE86-FA1A-493E-BCD6-243CF3369FDA}|laptoptracker.client\\laptoptracker.client.esproj|solutionrelative:laptoptracker.client\\src\\components\\landingpage\\footer.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{72AFBE86-FA1A-493E-BCD6-243CF3369FDA}|laptoptracker.client\\laptoptracker.client.esproj|c:\\users\\michael kasuku\\documents\\computer science\\fourth year\\web development\\project\\laptoptracker\\laptoptracker.client\\src\\components\\laptoptracker\\laptoptrackingdashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{72AFBE86-FA1A-493E-BCD6-243CF3369FDA}|laptoptracker.client\\laptoptracker.client.esproj|solutionrelative:laptoptracker.client\\src\\components\\laptoptracker\\laptoptrackingdashboard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginPage.jsx",
-              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\laptoptracker\\laptoptracker.client\\src\\components\\LoginPage.jsx",
-              "RelativeDocumentMoniker": "laptoptracker.client\\src\\components\\LoginPage.jsx",
-              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\laptoptracker\\laptoptracker.client\\src\\components\\LoginPage.jsx",
-              "RelativeToolTip": "laptoptracker.client\\src\\components\\LoginPage.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "LaptopTrackingDashboard.jsx",
+              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\laptoptracker\\laptoptracker.client\\src\\components\\LaptopTracker\\LaptopTrackingDashboard.jsx",
+              "RelativeDocumentMoniker": "laptoptracker.client\\src\\components\\LaptopTracker\\LaptopTrackingDashboard.jsx",
+              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\laptoptracker\\laptoptracker.client\\src\\components\\LaptopTracker\\LaptopTrackingDashboard.jsx",
+              "RelativeToolTip": "laptoptracker.client\\src\\components\\LaptopTracker\\LaptopTrackingDashboard.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-10-12T12:40:27.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LaptopTrackerDashboard.jsx",
-              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\laptoptracker\\laptoptracker.client\\src\\components\\LaptopTrackerDashboard.jsx",
-              "RelativeDocumentMoniker": "laptoptracker.client\\src\\components\\LaptopTrackerDashboard.jsx",
-              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\laptoptracker\\laptoptracker.client\\src\\components\\LaptopTrackerDashboard.jsx",
-              "RelativeToolTip": "laptoptracker.client\\src\\components\\LaptopTrackerDashboard.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-10-12T12:39:39.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Footer.jsx",
-              "DocumentMoniker": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\laptoptracker\\laptoptracker.client\\src\\components\\LandingPage\\Footer.jsx",
-              "RelativeDocumentMoniker": "laptoptracker.client\\src\\components\\LandingPage\\Footer.jsx",
-              "ToolTip": "C:\\Users\\Michael Kasuku\\Documents\\Computer Science\\fourth year\\Web Development\\Project\\laptoptracker\\laptoptracker.client\\src\\components\\LandingPage\\Footer.jsx",
-              "RelativeToolTip": "laptoptracker.client\\src\\components\\LandingPage\\Footer.jsx",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAAAIkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-10-12T12:20:08.371Z",
+              "WhenOpened": "2024-10-12T16:16:11.775Z",
               "EditorCaption": ""
             },
             {

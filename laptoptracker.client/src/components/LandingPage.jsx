@@ -93,7 +93,6 @@ const mediaQueryStyle = `
 
 // Injecting media query directly into the document's style
 const styleSheet = document.createElement('style');
-styleSheet.type = 'text/css';
 styleSheet.innerText = mediaQueryStyle;
 document.head.appendChild(styleSheet);
 
